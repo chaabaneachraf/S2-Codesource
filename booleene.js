@@ -1,48 +1,30 @@
-//Vérifier une comparaison
-console.log(10>15) //Affiche false
-console.log( 10===15) // Affiche false
-console.log( 10!==15)  //Affiche true
-console.log( 10>15) //Affiche false
-console.log( 10<15) //Affiche true
-console.log( 10<=15) //Affiche true
-console.log( 10>=15) //Affiche false
-//Utiliser une variable
-let age = 20; 
-console.log( age>=30) ; //Affiche false
-//Stocker le résultat
-let num=20;
-let estMjeur=num>=18 ;
-console.log( estMjeur);//Affiche true
-// Utiliser && (et)
-let num1= 20;
-let autorisation=true;
-let acces = nun1>=18 && autorisation===true;
-console.log (acces); //Affiche true
-//Utiliser ||(ou)
-let membre= false;
-let invitation= true;
-let entre = membre===true || invitation===true;
-console.log(entre); //Affiche true
-//Utiliser !(non)
-let disponible=true;
-console.log(!disponible) //Affiche true
-//Exercice — Prévoir le résultat
-console.log(5> 2); // Affiche true
-console.log(5<2); // Affiche false
-console.log(10 ===10); // Affiche true
-console.log(10 !== 10); // Affiche false
-console.log(8>=8); // Affiche true
-console.log(3<=2); // Affiche false
-console.log(true &&true); // Affiche true
-console.log(true&& false); // Affiche false
-console.log(false || true); // Affiche true
-console.log ( !false);//Affiche true
-//Exercice — Analyser des variables
-let num2= 22;
-let inscrit =true;
-let paiment= false;
-console.log(num2>=18) ;//Affiche true
-console.log(inscrit===true);//Affiche true
-console.log(paiment===true) ; //Affiche false
-console.log(num2>=18 && inscrit===true) ;//Affiche true
-console.log(inscrit===true ||paiment===false);//Affiche true
+ //2.1 Exercice
+// --- Opérateurs de comparaison ---
+let score = 8;
+let seuil = 10;
+console.log(score > seuil);  //false
+console.log(score === seuil);//false
+console.log(score !== seuil);//true
+
+// --- Stocker un résultat ---
+let estValide = score >= seuil;
+console.log(estValide);//false
+
+// --- Opérateurs logiques ---
+//let inscrit = false;
+//let paiement = false;
+let acces = score >= seuil && inscrit === true;
+console.log(acces);//false
+
+let entree = inscrit === false || paiement === false;
+console.log(entree); //false
+//2.2. Exercice
+let age = 22;
+let inscrit = true;
+let paiement = false;
+console.log(age>=18) ; //true
+console.log(inscrit=== true) ; //true
+console.log(paiement===true);//false
+console.log(age>=18 && inscrit===true);// true
+console.log(inscrit===true ||paiement===true);// true
+console.log(!paiement);// true
